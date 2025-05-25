@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snaky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Snaky</h1>
+            <div class="score-container">
+                <span>Score: </span>
+                <span id="score">0</span>
+            </div>
+        </div>
+        <canvas id="game-board"></canvas>
+        <div class="controls">
+            <button id="start-btn" aria-label="Start Game"><i class="fas fa-play"></i></button>
+            <button id="restart-btn" aria-label="Restart Game"><i class="fas fa-redo"></i></button>
+        </div>
+        <div class="game-over" id="game-over">
+            <h2>Game Over!</h2>
+            <p>Score: <span id="final-score">0</span></p>
+            <button id="play-again-btn" aria-label="Play Again"><i class="fas fa-play"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
